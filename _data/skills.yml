@@ -10,3 +10,6 @@
 # Digital content development and creation
 - skill: Machine Learning
   description: Deep Learning, Transfer Learning, Pytorch
+
+- skill: Etc
+  description: Django, React Native, Android, Vue, Kotlin, Swift

@@ -1,0 +1,33 @@
+# Projects
+# uncomment the urls if you wish to display them, and add your own URL
+
+# jazznotes.io
+- project: Seiren Lounge Admin
+  role: Web Client Develop (outsourcing)
+  duration: Jun, 2017 &mdash; Aug, 2017
+  # url: "http://www.seirenlounge.com/"
+  description: Develop admin page using Angular.
+
+- project: Maximize Medical Big Data Utilization using Transfer Learning
+  role: Customize ADDA Model
+  duration: Nov, 2017 &mdash; Jan, 2018
+  description: Increase effectiveness supervised and unsupervised learning by customizing TLDA and ADDA Model based on medical big data. </br><a href="https://gompu123.github.io/images/transfer_learning.png">Poster Link</a>
+
+# Springfield Community Outreach Group
+- project: MVL Labs Web Page Renewal
+  role: Web Client Develop (outsourcing)
+  duration: Jul, 2018 &mdash; Aug, 2018
+  url: "https://mvlchain.io/"
+  description: Renewal entire web page using React.
+
+- project: Tada App Web Page
+  role: Web Client Develop (outsourcing)
+  duration: Jul, 2018 &mdash; Aug, 2018
+  url: "https://tada.global/"
+  description: Develop entire web page using React.
+
+- project: Apache Flink Improvement
+  role: Improved ListState Develop
+  duration: Sep, 2018 &mdash; Present
+  # url: "https://tada.global/"
+  description: Improve performance for SSD stateful stream by query optimizing.

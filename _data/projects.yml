@@ -14,7 +14,7 @@
 - project: Seiren Lounge Admin
   role: Web Client Develop (outsourcing)
   duration: Jul, 2017 &mdash; Sep, 2017
-  description: Develop admin page for <a target="_blank" href="http://www.seirenlounge.com/">seirenlounge</a>. <br/> - Angular, RxJS
+  description: Develop admin page for <a target="_blank" href="http://www.seirenlounge.com/">seirenlounge</a>. <br/> - Angular, RxJS, D3JS
 
 - project: Maximize Medical Big Data Utilization using Transfer Learning
   role: Customize ADDA Model

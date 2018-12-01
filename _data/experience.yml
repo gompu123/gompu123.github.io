@@ -1,7 +1,7 @@
 # Jobs
 - company: RUBIS Lab
   position: Intern
-  duration: Mar, 2017 &mdash; Present
+  duration: Mar, 2017 &mdash; Oct, 2018
   summary: <b><a target="_blank" href="https://github.com/rubis-lab/NANS_Project_for_Android">NANS Project (N-App N-Screen)</a></b> <br/> Refactor and research for Android multi-screen platform for Android 7.1 <br/> Modify AOSP and Lineage OS to launch and display multiple forward apps on multiple displays <br/><br/><b>REIVN (Reverse Engineering for In-Vehicle Network)</b><br/> Research for reverse engineering of IVN <br/> Develop auto generator FlexRay spec (.FIBEX) from ASCII signal and CAN spec (.DBC).
 
 - company: Hyundai Card

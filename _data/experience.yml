@@ -1,16 +1,18 @@
 # Jobs
-# VP of Global Communications
 - company: RUBIS Lab
   position: Intern
   duration: Mar, 2017 &mdash; Present
   summary: <b><a target="_blank" href="https://github.com/rubis-lab/NANS_Project_for_Android">NANS Project (N-App N-Screen)</a></b> <br/> Refactor and research for Android multi-screen platform for Android 7.1 <br/> Modify AOSP and Lineage OS to launch and display multiple forward apps on multiple displays <br/><br/><b>REIVN (Reverse Engineering for In-Vehicle Network)</b><br/> Research for reverse engineering of IVN <br/> Develop auto generator FlexRay spec (.FIBEX) from ASCII signal and CAN spec (.DBC).
 
-# Director of Digital Stratgy
 - company: Hyundai Card
   position: Intern
   duration: Jan, 2018 &mdash; Feb, 2018
   summary: Research for GAN (Generative Adversial Networks), Deep Learning and Data Augmentation.
 
+- company: HyperConnect
+  position: Azar API Backend
+  duration: Oct, 2018 &mdash; Present
+  summary: Develop Azar application API Backend Server.
 
 # Communications Coordinator
 # - company: 

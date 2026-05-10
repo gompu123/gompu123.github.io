@@ -1,3 +1,485 @@
----
-layout: resume
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Giyeon Kim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+            color: #1a1a1a;
+            line-height: 1.58;
+            margin: 0;
+            padding: 0;
+            background-color: #faf9f8;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 40px auto;
+            padding: 56px 60px;
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+        }
+
+        header {
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 24px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Newsreader', ui-serif, Georgia, serif;
+            font-size: 3em;
+            font-weight: 500;
+            margin: 0 0 8px 0;
+            color: #111111;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #555555;
+            margin: 0 0 14px 0;
+        }
+
+        .contact-info,
+        .contact-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 0.9em;
+            color: #666666;
+        }
+
+        .contact-info {
+            margin-bottom: 10px;
+        }
+
+        .contact-link {
+            width: 34px;
+            height: 34px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #555555;
+            background-color: #f5f4f2;
+            border: 1px solid #e5e5e5;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .contact-link:hover {
+            color: #111111;
+            background-color: #ffffff;
+            border-color: #cfcfcf;
+        }
+
+        .contact-link svg {
+            width: 17px;
+            height: 17px;
+            display: block;
+        }
+
+        .print-url {
+            display: none;
+        }
+
+        .contact-info a {
+            color: #666666;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-info a:hover {
+            color: #111111;
+        }
+
+        .contact-separator {
+            margin: 0 9px;
+            color: #d1d1d1;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-family: 'Newsreader', ui-serif, Georgia, serif;
+            font-size: 1.35em;
+            font-weight: 600;
+            color: #1a1a1a;
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 9px;
+            margin: 0 0 18px 0;
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            margin: 0;
+            font-size: 0.94em;
+            color: #333333;
+        }
+
+        .item {
+            margin-bottom: 24px;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 20px;
+            margin-bottom: 4px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.03em;
+            color: #111111;
+        }
+
+        .item-date {
+            flex: 0 0 auto;
+            font-size: 0.88em;
+            color: #666666;
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+        }
+
+        .item-subtitle {
+            color: #555555;
+            margin-bottom: 10px;
+            font-size: 0.93em;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            color: #333333;
+            font-size: 0.92em;
+        }
+
+        li::marker {
+            color: #a0a0a0;
+        }
+
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+        }
+
+        .skills-list li {
+            background-color: #f5f4f2;
+            padding: 5px 11px;
+            border-radius: 20px;
+            font-size: 0.82em;
+            font-weight: 500;
+            line-height: 1.35;
+            color: #444444;
+            border: 1px solid #eaeaea;
+            margin: 0;
+        }
+
+        @media (max-width: 720px) {
+            .container {
+                margin: 0;
+                padding: 36px 24px;
+                border: 0;
+                border-radius: 0;
+            }
+
+            h1 {
+                font-size: 2.4em;
+            }
+
+            .contact-info,
+            .contact-links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 4px 0;
+            }
+
+            .item-header {
+                display: block;
+            }
+
+            .item-date {
+                display: block;
+                margin-top: 2px;
+            }
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 12mm;
+            }
+
+            body {
+                background-color: #fff;
+                line-height: 1.42;
+            }
+
+            .container {
+                box-shadow: none;
+                border: none;
+                margin: 0 auto;
+                padding: 0;
+                max-width: none;
+            }
+
+            header {
+                padding-bottom: 16px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 2.45em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+                margin-bottom: 12px;
+                padding-bottom: 6px;
+            }
+
+            section {
+                margin-bottom: 20px;
+                break-inside: avoid;
+            }
+
+            .item {
+                margin-bottom: 16px;
+                break-inside: avoid;
+            }
+
+            p,
+            li {
+                font-size: 0.82em;
+            }
+
+            li {
+                margin-bottom: 3px;
+            }
+
+            .skills-list {
+                gap: 5px;
+            }
+
+            .skills-list li {
+                font-size: 0.74em;
+                padding: 3px 8px;
+            }
+
+            .contact-links {
+                display: block;
+                font-size: 0.82em;
+                color: #666666;
+            }
+
+            .contact-link {
+                width: auto;
+                height: auto;
+                display: inline;
+                padding: 0;
+                background: none;
+                border: 0;
+                border-radius: 0;
+                color: #666666;
+            }
+
+            .contact-link svg {
+                display: none;
+            }
+
+            .print-url {
+                display: inline;
+            }
+
+            a {
+                color: inherit;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Giyeon Kim</h1>
+            <div class="subtitle">Backend / Platform Engineer</div>
+            <div class="contact-info">
+                <span>Seoul, South Korea</span>
+            </div>
+            <div class="contact-links" aria-label="Profile links">
+                <a class="contact-link" href="https://www.linkedin.com/in/giyeon-kim-416181143/" aria-label="LinkedIn profile" title="LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.02H3.54V9H7.1v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/>
+                    </svg>
+                    <span class="print-url">linkedin.com/in/giyeon-kim-416181143</span>
+                </a>
+                <span class="contact-separator print-url">•</span>
+                <a class="contact-link" href="https://github.com/gompu123" aria-label="GitHub profile" title="GitHub">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M12 0C5.37 0 0 5.5 0 12.28c0 5.42 3.44 10.02 8.2 11.65.6.11.82-.27.82-.59 0-.29-.01-1.06-.02-2.08-3.34.74-4.04-1.65-4.04-1.65-.55-1.42-1.34-1.8-1.34-1.8-1.09-.76.08-.74.08-.74 1.2.09 1.84 1.27 1.84 1.27 1.07 1.88 2.81 1.34 3.5 1.02.11-.79.42-1.34.76-1.64-2.66-.31-5.47-1.36-5.47-6.07 0-1.34.47-2.43 1.24-3.29-.12-.31-.54-1.56.12-3.25 0 0 1.01-.33 3.3 1.26a11.2 11.2 0 0 1 6 0c2.29-1.59 3.3-1.26 3.3-1.26.66 1.69.24 2.94.12 3.25.77.86 1.24 1.95 1.24 3.29 0 4.72-2.81 5.75-5.49 6.06.43.38.81 1.13.81 2.28 0 1.64-.02 2.97-.02 3.37 0 .33.22.71.83.59A12.26 12.26 0 0 0 24 12.28C24 5.5 18.63 0 12 0Z"/>
+                    </svg>
+                    <span class="print-url">github.com/gompu123</span>
+                </a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                Backend and platform engineer with 7+ years of experience building API systems, service infrastructure, developer platforms, and e-commerce backend systems. Strong in Kotlin, Spring Boot, AWS, Kafka, Redis, Kubernetes, Istio, ClickHouse, and Elasticsearch. Recently focused on AI-native automation platforms that help engineering and business teams turn repeated workflows into self-service systems.
+            </p>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">AX Engineer</div>
+                    <div class="item-date">Sep 2025 - Present</div>
+                </div>
+                <div class="item-subtitle">Rapport Labs - AX Team, Seoul, South Korea</div>
+                <ul>
+                    <li>Built and operate a TypeScript-based AI agent using OpenAI Agents SDK to automate CX-seller inquiry workflows, currently covering approximately 50% of total inquiry volume.</li>
+                    <li>Designed the workflow around human-in-the-loop review, operational logging, and explicit success/failure/out-of-scope tracking to support safe production use.</li>
+                    <li>Built Raku, a Slack-native agent platform that lets employees invoke Claude Agent SDK, Codex SDK, and custom agents through Slack app mentions and chat streaming interfaces.</li>
+                    <li>Scaled Raku across a 300-person organization, supporting roughly 1,000-2,000 daily agent calls across cron agents, personal agents, custom agents, and live artifacts.</li>
+                    <li>Built a deployment platform that lets non-engineering teams ship AI-assisted Next.js apps and cron jobs with automated build, preview, production deployment, secrets, logs, rollback, domains, and monitoring.</li>
+                    <li>Enabled 35 internal deployments and supported Raku adoption discussions with two companies as an FDE-style technical owner.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Backend Engineer</div>
+                    <div class="item-date">Feb 2022 - Sep 2025</div>
+                </div>
+                <div class="item-subtitle">Rapport Labs - Backend Engineering, Seoul, South Korea</div>
+                <ul>
+                    <li>Built backend and infrastructure for 8dogam, a new food e-commerce business from Rapport Labs, using Kotlin, Spring Boot, AWS, GitHub Actions, and Argo CD.</li>
+                    <li>Provided end-to-end engineering support during the early stage of the business, covering infrastructure, backend services, and frontend deployment as the sole backend/infrastructure owner for roughly the first eight months.</li>
+                    <li>Designed and operated AWS infrastructure using ECS, EKS, EC2, RDS, S3, CloudFront, and Lambda@Edge.</li>
+                    <li>Improved back-office product search by introducing ClickHouse for complex operational search workloads that were difficult to support with the existing Elasticsearch-based flow.</li>
+                    <li>Reduced coupling across multiple microservices by providing a ClickHouse-backed repository abstraction compatible with familiar JPA Repository and Querydsl-style usage.</li>
+                    <li>Integrated with an RDS CDC pipeline based on Debezium, Kafka, ClickHouse Kafka Connect, and ClickHouse, removing previous product-selection limits caused by slow or constrained search queries.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Server Platform Engineer</div>
+                    <div class="item-date">Aug 2020 - Feb 2022</div>
+                </div>
+                <div class="item-subtitle">Viva Republica (Toss) - Server Platform Team, Seoul, South Korea</div>
+                <ul>
+                    <li>Managed API Gateway capabilities for routing and authentication/authorization across Toss services.</li>
+                    <li>Improved API Gateway developer experience by enabling self-service configuration through an internal tool that generated Spring Cloud Gateway-compatible YAML.</li>
+                    <li>Automated gateway change verification, canary rollout, and blue-green deployment so service teams could release gateway changes without waiting on manual platform-team deployment requests.</li>
+                    <li>Related public talk on Toss API Gateway: <a href="https://youtu.be/Zs3jVelp0L8">YouTube</a></li>
+                    <li>Built a zero-trust communication environment inside production Kubernetes clusters using Istio mTLS, AuthorizationPolicy, PeerAuthentication, and Sidecar resources.</li>
+                    <li>Improved Kafka-to-Elasticsearch service log ingestion performance by replacing or tuning JVM-heavy Logstash-based components and optimizing Elasticsearch field indexing strategy.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Backend Engineer</div>
+                    <div class="item-date">Oct 2018 - Aug 2020</div>
+                </div>
+                <div class="item-subtitle">Hyperconnect - Azar / Hakuna, Seoul, South Korea</div>
+                <ul>
+                    <li>Developed Azar API features for user matching quality, including user feature collection and A/B test segment integration into product behavior.</li>
+                    <li>Implemented quest features such as daily missions and attendance checks using Java 8, Spring Boot 2.0, AWS Aurora RDS MySQL, and ElastiCache.</li>
+                    <li>Designed and implemented a high-availability architecture for Azar's stateful STOMP server using Redis Cluster as a persistence layer and NATS as a STOMP-compatible message broker.</li>
+                    <li>Implemented Hakuna direct messaging features, including message send/receive flows, read status, and notifications in a Scala/Akka-based backend environment.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Core Skills</h2>
+            <ul class="skills-list">
+                <li>Kotlin</li>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>TypeScript</li>
+                <li>Node.js</li>
+                <li>AWS</li>
+                <li>ECS</li>
+                <li>EKS</li>
+                <li>RDS MySQL</li>
+                <li>S3</li>
+                <li>CloudFront</li>
+                <li>Argo CD</li>
+                <li>GitHub Actions</li>
+                <li>Kafka</li>
+                <li>Redis</li>
+                <li>ClickHouse</li>
+                <li>Elasticsearch</li>
+                <li>Debezium</li>
+                <li>Istio</li>
+                <li>OpenAI Agents SDK</li>
+                <li>Claude Agent SDK</li>
+                <li>Codex SDK</li>
+                <li>Slack Agents</li>
+                <li>LiteLLM</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">B.S. in Computer Science and Engineering</div>
+                </div>
+                <div class="item-subtitle">Seoul National University</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Publication</h2>
+            <p>
+                “Accurate Thermal Prediction for NANS Services on a Smart Phone,” SIES 2018. <a href="https://ieeexplore.ieee.org/document/8442110">IEEE</a>
+            </p>
+        </section>
+    </div>
+</body>
+</html>

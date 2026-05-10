@@ -274,6 +274,19 @@
             margin: 0;
         }
 
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px 22px;
+        }
+
+        .skill-group-title {
+            margin: 0 0 8px 0;
+            font-size: 0.82em;
+            font-weight: 600;
+            color: #666666;
+        }
+
         @media (max-width: 720px) {
             .container {
                 margin: 0;
@@ -301,6 +314,10 @@
             .item-date {
                 display: block;
                 margin-top: 2px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -364,6 +381,15 @@
             .skills-list li {
                 font-size: 0.74em;
                 padding: 3px 8px;
+            }
+
+            .skills-grid {
+                gap: 10px;
+            }
+
+            .skill-group-title {
+                font-size: 0.74em;
+                margin-bottom: 5px;
             }
 
             .contact-links {
@@ -497,32 +523,52 @@
 
         <section>
             <h2>Core Skills</h2>
-            <ul class="skills-list">
-                <li>Kotlin</li>
-                <li>Java</li>
-                <li>Spring Boot</li>
-                <li>TypeScript</li>
-                <li>Node.js</li>
-                <li>AWS</li>
-                <li>ECS</li>
-                <li>EKS</li>
-                <li>RDS MySQL</li>
-                <li>S3</li>
-                <li>CloudFront</li>
-                <li>Argo CD</li>
-                <li>GitHub Actions</li>
-                <li>Kafka</li>
-                <li>Redis</li>
-                <li>ClickHouse</li>
-                <li>Elasticsearch</li>
-                <li>Debezium</li>
-                <li>Istio</li>
-                <li>OpenAI Agents SDK</li>
-                <li>Claude Agent SDK</li>
-                <li>Codex SDK</li>
-                <li>Slack Agents</li>
-                <li>LiteLLM</li>
-            </ul>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Backend</h3>
+                    <ul class="skills-list">
+                        <li>Kotlin</li>
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>TypeScript</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Infrastructure</h3>
+                    <ul class="skills-list">
+                        <li>AWS</li>
+                        <li>ECS</li>
+                        <li>EKS</li>
+                        <li>RDS MySQL</li>
+                        <li>S3</li>
+                        <li>CloudFront</li>
+                        <li>Argo CD</li>
+                        <li>GitHub Actions</li>
+                        <li>Istio</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Data & Search</h3>
+                    <ul class="skills-list">
+                        <li>Kafka</li>
+                        <li>Redis</li>
+                        <li>ClickHouse</li>
+                        <li>Elasticsearch</li>
+                        <li>Debezium</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">AI / Agent Platform</h3>
+                    <ul class="skills-list">
+                        <li>OpenAI Agents SDK</li>
+                        <li>Claude Agent SDK</li>
+                        <li>Codex SDK</li>
+                        <li>Slack Agents</li>
+                        <li>LiteLLM</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section>

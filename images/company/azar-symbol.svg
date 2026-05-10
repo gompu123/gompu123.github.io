@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Azar symbol</title>
+  <defs>
+    <linearGradient id="g" x1="74" y1="256" x2="444" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#10dda5"/>
+      <stop offset="1" stop-color="#00f3a0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="257" r="188" fill="url(#g)"/>
+  <path d="M69 342c-21-27-27-57-15-83 12-28 43-48 81-58" fill="none" stroke="#000" stroke-width="27" stroke-linecap="round"/>
+  <path d="M388 152c46 6 80 28 91 61 20 61-53 131-173 167" fill="none" stroke="#000" stroke-width="33" stroke-linecap="round"/>
+  <path d="M265 326l-42 38 51 24" fill="none" stroke="#000" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="244" cy="177" r="20" fill="#000"/>
+  <circle cx="339" cy="152" r="18" fill="#000"/>
+  <path d="M254 239c44 12 92 1 117-42" fill="none" stroke="#000" stroke-width="16" stroke-linecap="round"/>
+</svg>

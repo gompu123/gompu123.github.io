@@ -176,9 +176,37 @@
         }
 
         .item-title {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
             font-weight: 600;
             font-size: 1.03em;
             color: #111111;
+        }
+
+        .company-mark {
+            width: 23px;
+            height: 23px;
+            flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #e5e5e5;
+            border-radius: 50%;
+            background-color: #f5f4f2;
+            color: #555555;
+            font-size: 0.68em;
+            font-weight: 600;
+            line-height: 1;
+        }
+
+        .company-logo {
+            width: 23px;
+            height: 23px;
+            flex: 0 0 auto;
+            display: inline-block;
+            object-fit: contain;
+            border-radius: 6px;
         }
 
         .item-date {
@@ -390,7 +418,7 @@
 
             <div class="item">
                 <div class="item-header">
-                    <div class="item-title">AX Engineer</div>
+                    <div class="item-title"><span class="company-mark" aria-hidden="true">R</span>AX Engineer</div>
                     <div class="item-date">Sep 2025 - Present</div>
                 </div>
                 <div class="item-subtitle">Rapport Labs - AX Team, Seoul, South Korea</div>
@@ -406,7 +434,7 @@
 
             <div class="item">
                 <div class="item-header">
-                    <div class="item-title">Backend Engineer</div>
+                    <div class="item-title"><span class="company-mark" aria-hidden="true">R</span>Backend Engineer</div>
                     <div class="item-date">Feb 2022 - Sep 2025</div>
                 </div>
                 <div class="item-subtitle">Rapport Labs - Backend Engineering, Seoul, South Korea</div>
@@ -422,7 +450,7 @@
 
             <div class="item">
                 <div class="item-header">
-                    <div class="item-title">Server Platform Engineer</div>
+                    <div class="item-title"><img class="company-logo" src="images/company/toss-symbol.png" alt="" aria-hidden="true">Server Platform Engineer</div>
                     <div class="item-date">Aug 2020 - Feb 2022</div>
                 </div>
                 <div class="item-subtitle">Viva Republica (Toss) - Server Platform Team, Seoul, South Korea</div>
@@ -438,7 +466,7 @@
 
             <div class="item">
                 <div class="item-header">
-                    <div class="item-title">Backend Engineer</div>
+                    <div class="item-title"><span class="company-mark" aria-hidden="true">H</span>Backend Engineer</div>
                     <div class="item-date">Oct 2018 - Aug 2020</div>
                 </div>
                 <div class="item-subtitle">Hyperconnect - Azar / Hakuna, Seoul, South Korea</div>

@@ -209,6 +209,28 @@
             background-color: #f5f4f2;
         }
 
+        .company-logo-stack {
+            width: 34px;
+            height: 23px;
+            flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+            padding: 4px;
+            border: 1px solid #e5e5e5;
+            border-radius: 999px;
+            background-color: #f5f4f2;
+        }
+
+        .company-logo-stack img {
+            width: 13px;
+            height: 13px;
+            display: block;
+            object-fit: contain;
+            border-radius: 3px;
+        }
+
         .item-date {
             flex: 0 0 auto;
             font-size: 0.88em;
@@ -479,7 +501,7 @@
                     <div class="item-title">Backend Engineer</div>
                     <div class="item-date">Feb 2022 - Sep 2025</div>
                 </div>
-                <div class="item-subtitle"><img class="company-logo" src="images/company/queenit-favicon.png" alt="" aria-hidden="true"><a href="https://www.rapportlabs.kr/">Rapport Labs</a> / <a href="https://web.queenit.kr/home/RECOMMENDATION">Queenit</a> - Backend Engineering, Seoul, South Korea</div>
+                <div class="item-subtitle"><span class="company-logo-stack" aria-hidden="true"><img src="images/company/queenit-favicon.png" alt=""><img src="images/company/8dogam-favicon.png" alt=""></span><a href="https://www.rapportlabs.kr/">Rapport Labs</a> / <a href="https://web.queenit.kr/home/RECOMMENDATION">Queenit</a> / <a href="https://8dogam.com/">8dogam</a> - Backend Engineering, Seoul, South Korea</div>
                 <ul>
                     <li>Built backend and infrastructure for <a href="https://8dogam.com/">8dogam</a>, a new food e-commerce business from Rapport Labs, using Kotlin, Spring Boot, AWS, GitHub Actions, and Argo CD.</li>
                     <li>Provided end-to-end engineering support during the early stage of the business, covering infrastructure, backend services, and frontend deployment as the sole backend/infrastructure owner for roughly the first eight months.</li>
